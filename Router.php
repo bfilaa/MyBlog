@@ -1,4 +1,5 @@
 <?php
+require_once 'views/View.php';
 
 class Router
 {
@@ -20,6 +21,7 @@ class Router
                 $controllerFile = "controllers/".$controllerClass.".php";
 
                 if (file_exists($controllerFile)) {
+
                     require_once($controllerFile);
                     $this->ctrl = new $controllerClass($url);
                 }
@@ -34,7 +36,8 @@ class Router
 
         }  catch (\Exception $e) {
             $errorMsg = $e->getMessage();
-            require_once('views/viewError.php');
+            $this->_view = new View('Error');
+            $this->_view->generate(array('errorMsg' => $errorMsg));
         }
     }
 }
