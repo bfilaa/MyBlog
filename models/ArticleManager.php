@@ -6,6 +6,9 @@ class ArticleManager extends Model
         return $this->getAll('articles', 'Article');
     }
 
+    public function getArticle($id){
+        return $this->getOne('articles', 'article', $id);
+    }
+
 }
 
-?>
