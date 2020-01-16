@@ -1,6 +1,6 @@
 <div class="slider">
 	<div class="display-table  center-text">
-		<h1 class="title display-table-cell"><b>CONTACT</b></h1>
+		<h1 class="title display-table-cell"><b>CONNEXION</b></h1>
 	</div>
 </div><!-- slider -->
 
@@ -20,7 +20,7 @@
 
                         <div class="blog-info">
 
-                            <h4 class="title"><a href="#"><b>CONTACT</b></a></h4>
+                            <h4 class="title"><a href="#"><b>SE CONNECTER</b></a></h4>
 
                         </div><!-- blog-info -->
                     </div><!-- single-post -->

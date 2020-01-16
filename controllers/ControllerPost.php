@@ -19,8 +19,8 @@ class ControllerPost
     private function article()
     {
         if (isset($_GET['id'])) { 
-            $this->_articleManager = new ArticleManager();
-            $articles = $this->_articleManager->getArticles($_GET['id']);
+            $this->_articleManager = new ArticleManager;
+            $article = $this->_articleManager->getArticle($_GET['id']);
             $this->_view = new View('SinglePost');
             $this->_view->generate(array('article' => $article));
         }

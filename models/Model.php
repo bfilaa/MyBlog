@@ -42,5 +42,6 @@ abstract class Model
         return $var;
         $req->closeCursor();
     }
-
+//
+// 
 }

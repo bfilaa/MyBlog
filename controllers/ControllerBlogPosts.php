@@ -1,7 +1,7 @@
 <?php
 require_once 'views/View.php';
 
-class ControllerContact
+class ControllerBlogPosts
 {
     private $_articleManager;
     private $_view;
@@ -19,7 +19,7 @@ class ControllerContact
     private function articles(){
         $this->_articleManager = new ArticleManager();
         $articles = $this->_articleManager->getArticles();
-        $this->_view = new View('Contact');
+        $this->_view = new View('BlogPosts');
         $this->_view->generate(array('articles' => $articles));
     }
 }

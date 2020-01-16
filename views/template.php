@@ -34,10 +34,10 @@
 			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
 			<ul class="main-menu visible-on-click" id="main-menu">
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Blogs posts</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">S'indentifier</a></li>
+				<li><a href="Accueil">Accueil</a></li>
+				<li><a href="BlogPosts">Blogs posts</a></li>
+				<li><a href="Contact">Contact</a></li>
+				<li><a href="Login">S'identifier</a></li>
 			</ul><!-- main-menu -->
 
 			<div class="src-area">
@@ -51,6 +51,7 @@
 	</header>
 
 	<?= $content ?>
+	
 	<footer>
 
 		<div class="container">
